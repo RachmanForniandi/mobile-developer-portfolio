@@ -2,68 +2,200 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main>
+      <section className="hero">
+        <div className="hero-content">
+          <p className="hero-label">Hello, I'm</p>
+
+          <h1>Rachman Forniandi</h1>
+
+          <h2>Mobile Application Developer</h2>
+
+          <p className="hero-description">
+            I build modern, scalable, and maintainable mobile applications
+            using Android, Kotlin, Jetpack Compose, Flutter, and Kotlin
+            Multiplatform.
           </p>
+
+          <div className="hero-actions">
+            <a href="#projects" className="button-primary">
+              View Projects
+            </a>
+
+            <a
+              href="https://github.com/RachmanForniandi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-secondary"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="section" id="about">
+        <h2>About Me</h2>
+
+        <p>
+          Mobile developer focused on building Android and cross-platform
+          applications with modern architecture, clean code, and scalable
+          solutions.
+        </p>
+      </section>
+
+      <section className="section" id="skills">
+        <h2>Tech Stack</h2>
+
+        <div className="skills-grid">
+          <div className="skill-card">
+            <h3>Android</h3>
+            <p>Kotlin, Jetpack Compose, XML</p>
+          </div>
+
+          <div className="skill-card">
+            <h3>Architecture</h3>
+            <p>MVVM, Clean Architecture, Repository Pattern</p>
+          </div>
+
+          <div className="skill-card">
+            <h3>Android Jetpack</h3>
+            <p>Room, Paging 3, Navigation, DataStore, WorkManager</p>
+          </div>
+
+          <div className="skill-card">
+            <h3>Networking</h3>
+            <p>Retrofit, Ktor, REST API</p>
+          </div>
+
+          <div className="skill-card">
+            <h3>Dependency Injection</h3>
+            <p>Hilt, Dagger</p>
+          </div>
+
+          <div className="skill-card">
+            <h3>Cross Platform</h3>
+            <p>Flutter, Dart, Kotlin Multiplatform</p>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="section" id="projects">
+        <h2>Featured Projects</h2>
+
+        <div className="projects-grid">
+          <article className="project-card">
+            <span>Android</span>
+
+            <h3>Aero Space Flight News</h3>
+
+            <p>
+              Spaceflight news application built using Kotlin, Clean
+              Architecture, MVVM, Paging 3, Room, and dependency injection.
+            </p>
+
+            <a
+              href="https://github.com/RachmanForniandi/Aero-Space-Flight-News"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Repository →
+            </a>
+          </article>
+
+          <article className="project-card">
+            <span>Android</span>
+
+            <h3>Movie TMDB Compose</h3>
+
+            <p>
+              Modern movie application built with Jetpack Compose and TMDB API.
+            </p>
+
+            <a
+              href="https://github.com/RachmanForniandi/MovieTmDBCompose"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Repository →
+            </a>
+          </article>
+
+          <article className="project-card">
+            <span>Mobile Application</span>
+
+            <h3>Culinary Hunt</h3>
+
+            <p>
+              Mobile application project focused on culinary discovery and user
+              experience.
+            </p>
+
+            <a
+              href="https://github.com/RachmanForniandi/Culinary_Hunt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Repository →
+            </a>
+          </article>
+
+          <article className="project-card">
+            <span>Mobile Application</span>
+
+            <h3>Circle Gathering</h3>
+
+            <p>
+              Mobile application designed around community and gathering
+              functionality.
+            </p>
+
+            <a
+              href="https://github.com/RachmanForniandi/CircleGathering"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Repository →
+            </a>
+          </article>
+
+          <article className="project-card">
+            <span>Android</span>
+
+            <h3>Dicoding Events Tracker</h3>
+
+            <p>
+              Android application for discovering and tracking Dicoding events.
+            </p>
+
+            <a
+              href="https://github.com/RachmanForniandi/Dicoding-Events-Tracker"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Repository →
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section className="section contact" id="contact">
+        <h2>Let's Work Together</h2>
+
+        <p>
+          I'm interested in opportunities related to Android, Kotlin, Flutter,
+          and modern mobile application development.
+        </p>
+
+        <a
+          href="https://github.com/RachmanForniandi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button-primary"
+        >
+          Contact Me
+        </a>
+      </section>
+    </main>
   );
 }
